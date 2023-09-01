@@ -5,3 +5,30 @@ This will clear the console output.
 Run the file once while the tasks are longer. 
 
 Copy and paste the terminal results (when task_duration is 3) here.
+
+PS C:\Users\KONGA\Documents\streaming-02-multiple-processes> & C:/Users/KONGA/AppData/Local/Programs/Python/Python39/python.exe c:/Users/KONGA/Documents/streaming-02-multiple-processes/multiple_processes.py
+2023-09-01 07:09:00,662 - INFO - 
+======================================================================
+STARTING UP.............................
+  Date and Time:    2023-09-01 at 07:09 AM
+  Operating System: nt Windows 10
+  Python Version:   3.9.11
+  Path to Interpreter:  C:\Users\KONGA\AppData\Local\Programs\Python\Python39\python.exe
+======================================================================
+
+2023-09-01 07:09:00,662 - INFO - Called recreate_database().
+2023-09-01 07:09:00,662 - INFO - Called drop_table().
+2023-09-01 07:09:00,683 - INFO - Table 'pets' dropped successfully.
+2023-09-01 07:09:00,684 - INFO - Called create_table().
+2023-09-01 07:09:00,693 - INFO - Table 'pets' created successfully.
+2023-09-01 07:09:00,836 - INFO - Called process_one().
+2023-09-01 07:09:00,836 - INFO -   Called insert_pet() with process=P1, name=Ace, breed=Dog.
+2023-09-01 07:09:00,837 - INFO - Called process_two().
+2023-09-01 07:09:00,837 - INFO -   Called insert_pet() with process=P2, name=Cooper, breed=Rabbit.
+2023-09-01 07:09:00,840 - INFO - Called process_three().
+2023-09-01 07:09:00,840 - INFO -   Called insert_pet() with process=P3, name=Emma, breed=Rabbit.
+2023-09-01 07:09:03,855 - INFO -   Called insert_pet() with process=P1, name=Buddy, breed=Dog.
+2023-09-01 07:09:06,391 - ERROR - ERROR while P2 inserting pet Cooper: database is locked
+2023-09-01 07:09:06,393 - INFO -   Called insert_pet() with process=P2, name=Dingo, breed=Dog.
+2023-09-01 07:09:06,408 - ERROR - ERROR while P3 inserting pet Emma: database is locked
+2023-09-01 07:09:06,409 - INFO -   Called insert_pet() with process=P3, name=Felix, breed=Cat.

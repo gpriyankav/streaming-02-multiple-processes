@@ -1,0 +1,25 @@
+
+======================================================================
+======================================================================
+ Welcome to NW Diagnostics!
+ At: 2023-08-31 at 03:36 AM
+ Operating System: nt Windows 10
+ System Architecture: 64bit
+ Number of CPUs: 20
+ Machine Type: AMD64
+ Python Version: 3.9.11
+ Python Build Date and Compiler: tags/v3.9.11:2de452f with Mar 16 2022 14:33:45
+ Python Implementation: CPython
+ Active pip environment: None
+ Path to Interpreter:         C:\Users\KONGA\AppData\Local\Programs\Python\Python39\python.exe
+ Path to virtual environment: C:\Users\KONGA\AppData\Local\Programs\Python\Python39
+ Current Working Directory:   C:\Users\KONGA\Documents\streaming-02-multiple-processes
+ Path to source directory:    c:\Users\KONGA\Documents\streaming-02-multiple-processes
+ Path to script file:         c:\Users\KONGA\Documents\streaming-02-multiple-processes\00_check_core.py
+ User's Home Directory:       C:\Users\KONGA
+ Terminal Environment:        VS Code
+ Terminal Type:               cmd.exe
+ Git available in PATH:       True 
+======================================================================
+======================================================================
+

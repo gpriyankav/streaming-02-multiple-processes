@@ -1,5 +1,7 @@
 # streaming-02-multiple-processes
 
+Gorentla Priyanka Modified date 09/01/2023
+
 > Multiple processes accessing a shared resource concurrently
 
 ## Overview
@@ -39,14 +41,37 @@ Execute multiple_processes.py.
 Read the output. Read the code. 
 Try to figure out what's going on. 
 
-1. What libraries did we import?
-1. Where do we set the TASK_DURATION_SECONDS?
-1. How many functions are defined? 
-1. What are the function names? 
-1. In general, what does each function do? 
-1. Where does the execution begin? Hint: generally at the end of the file.
-1. How many processes do we start?
-1. How many records does each process insert?
+1. What libraries did we import? 
+    a. datetime </br>
+    b. logging  </br>
+    c. multiprocessing </br> 
+    d. os </br>
+    e. platform </br>
+    f. sqlite3 </br>
+    g. sys </br>
+    h. time </br>
+2. Where do we set the TASK_DURATION_SECONDS?</br>
+   After settingup basic configurations for login, declared the constant called TASK_DURATION_SECONDS at line 40.
+3. How many functions are defined? </br>
+   7 functions are defined.
+4. What are the function names? </br>
+   recreate_database,create_table,drop_table,insert_pet,process_one,process_two,process_three.
+5. In general, what does each function do? </br>
+recreate_database- It will drop if database exits and recreates. </br>
+create_table - Creates table in database. </br>
+drop_table- Drops table if exists. </br>
+insert_pet - Insert data into the table i.e insert pet into pets table. </br>
+process_one- defines P1, name and breed of the pet. </br>
+process_two- defines P1, name and breed of the pet. </br>
+process_three- defines P1, name and breed of the pet. </br>
+6. Where does the execution begin? Hint: generally at the end of the file.</br>
+Line 185</br>
+ # start each process</br>
+    p1.start()</br>
+    p2.start()</br>
+    p3.start()</br>
+7. How many processes do we start? 3 (p1,p2,p3)
+8. How many records does each process insert? each process inserts 2 records(3 process's each 2 reocrds).
 
 In this first run, we start 3 processes, 
 each inserting 2 records into a shared database 
@@ -126,7 +151,9 @@ When you get an error, read them carefully.
 
 Do a web search on the sqlite3 'database is locked' error.
 
-- What do you learn?
+- What do you learn? </br>
+This error code occurs when the user tries to perform two inappropriate operations on a database at the same detail and on the same database connection. This error code shows that an operation can’t be continued due to encounter with a transaction that uses the same database connection or the transaction that uses a distinct database connection by using a shared cache.</br>
+Overall, this error occurs when we are trying to open the database which is already being used by someone.
 - Once a process fails, it crashes the main process and everything stops. 
 
 ### Deadlock
